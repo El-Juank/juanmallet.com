@@ -72,9 +72,9 @@ $(window).on("load", function () {
     $(this).height(pi_width + 50);
   });
 
-  /*--------------------------
+  /*---------------------------
 		Portfolio adjustments
-	--------------------------*/
+	---------------------------*/
   $(function () {
     $("#design-btn").click(function () {
       $(".adjust4-6").removeClass("col-lg-4").addClass("col-lg-6");
@@ -95,7 +95,7 @@ $(window).on("load", function () {
 
   /*------------------
 		Accordions
-	--------------------*/
+	------------------*/
   $(".panel-link").on("click", function (e) {
     $(".panel-link").parent(".panel-header").removeClass("active");
     var $this = $(this).parent(".panel-header");
