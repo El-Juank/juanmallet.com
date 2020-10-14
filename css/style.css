@@ -1,18 +1,22 @@
-/* =================================
-------------------------------------
-  Riddle - Portfolio
-  Version: 1.0
- ------------------------------------ 
- ====================================*/
+/* ===================================================================
+ *
+ * Estilos de juanmallet.com, mi página web personal
+ *
+ * =================================================================== */
 
-/*----------------------------------------*/
-/* Template default CSS
-/*----------------------------------------*/
+/*------------------------
+  General
+--------------------------*/
+:root {
+  --colorCorp: #0c1620;
+  --colorCorp2: #243d4f;
+  --colorCorp3: #919ea6;
+}
 
 html,
 body {
   height: 100%;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: "Josefin Sans", sans-serif;
 }
 
 h1,
@@ -21,15 +25,15 @@ h3,
 h4,
 h5,
 h6 {
-  color: #001418;
+  color: var(--colorCorp);
   margin: 0;
   font-weight: 600;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: "Josefin Sans", sans-serif;
 }
 
 p {
   font-size: 18px;
-  color: #919ea6;
+  color: var(--colorCorp3);
   line-height: 1.8;
 }
 
@@ -81,7 +85,7 @@ ol {
 }
 
 /*------------------------
-  Common Elements
+  Elements comunes
 --------------------------*/
 .element {
   margin-bottom: 100px;
@@ -105,7 +109,7 @@ ol {
 .loader {
   width: 30px;
   height: 30px;
-  border: 3px solid #0c1620;
+  border: 3px solid var(--colorCorp);
   position: absolute;
   top: 50%;
   left: 50%;
@@ -120,15 +124,15 @@ ol {
 @keyframes loader {
   0% {
     -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    transform: rotate(0deg);
   }
   50% {
     -webkit-transform: rotate(180deg);
-            transform: rotate(180deg);
+    transform: rotate(180deg);
   }
   100% {
     -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
 
@@ -154,41 +158,42 @@ ol {
   position: relative;
   color: #fff;
   border: none;
-  background-color: #0c1620;
+  background-color: var(--colorCorp);
   margin-right: 15px;
   z-index: 1;
   cursor: pointer;
+  transition: all 0.3s ease-in-out;
 }
 
 .site-btn.btn-fade {
-  background-color: #919ea6;
+  background-color: var(--colorCorp3);
 }
 
 .site-btn.btn-line {
   background: none;
-  border: 2px solid #0c1620;
-  color: #0c1620;
+  border: 2px solid var(--colorCorp);
+  color: var(--colorCorp);
   padding: 13px 10px;
 }
 
 .site-btn.btn-line:hover {
-  color: #0c1620;
+  color: var(--colorCorp);
 }
 
 .site-btn.btn-line-fade {
   background: none;
-  border: 2px solid #919ea6;
-  color: #919ea6;
+  border: 2px solid var(--colorCorp3);
+  color: var(--colorCorp3);
   padding: 13px 10px;
 }
 
 .site-btn.btn-line-fade:hover {
-  color: #919ea6;
+  color: var(--colorCorp3);
 }
 
 .site-btn:hover {
   color: #fff;
-  background-color: #243d4f;
+  background-color: var(--colorCorp2);
 }
 
 /*===  Accordion  ===*/
@@ -197,7 +202,7 @@ ol {
 }
 
 .accordion-area .panel-header {
-  background: #0c1620;
+  background: var(--colorCorp);
   color: #fff;
   display: block;
   padding: 12px 50px;
@@ -205,7 +210,7 @@ ol {
   font-size: 14px;
   font-weight: 600;
   position: relative;
-  border: 2px solid #0c1620;
+  border: 2px solid var(--colorCorp);
   -webkit-transition: all 0.4s ease-out 0s;
   -o-transition: all 0.4s ease-out 0s;
   transition: all 0.4s ease-out 0s;
@@ -213,12 +218,12 @@ ol {
 
 .accordion-area .panel-header.active {
   background: transparent;
-  color: #0c1620;
+  color: var(--colorCorp);
 }
 
 .accordion-area .panel-header.active .panel-link:after {
   content: "-";
-  color: #0c1620;
+  color: var(--colorCorp);
 }
 
 .accordion-area .panel-header.active .panel-link.collapsed:after {
@@ -266,13 +271,13 @@ ol {
 }
 
 .tab-element .nav-tabs .nav-link {
-  border: 2px solid #0c1620;
-  background: #0c1620;
+  border: 2px solid var(--colorCorp);
+  background: var(--colorCorp);
   border-radius: 0;
   margin-right: 10px;
   font-size: 14px;
   font-weight: 500;
-  color: #222;
+  color: var(--colorCorp);
   padding: 15px 40px;
   min-width: 118px;
   font-size: 16px;
@@ -286,7 +291,7 @@ ol {
 
 .tab-element .nav-tabs .nav-link.active {
   background: transparent;
-  color: #0c1620;
+  color: var(--colorCorp);
 }
 
 .tab-element .tab-pane h4 {
@@ -320,7 +325,7 @@ ol {
 }
 
 .circle-progress .progress-info p {
-  color: #919ea6;
+  color: var(--colorCorp3);
   font-size: 16px;
   line-height: normal;
 }
@@ -371,10 +376,15 @@ ol {
 .main-menu ul li a {
   display: inline-block;
   font-size: 18px;
-  color: #001418;
+  color: var(--colorCorp);
   margin-left: 15px;
   margin-right: 10px;
   padding: 20px 0 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+.main-menu ul li a:hover {
+  color: var(--colorCorp2);
 }
 
 .header-btn {
@@ -397,32 +407,90 @@ ol {
     Back2Top
 --------------------------*/
 #back2Top {
-    width: 50px;
-    height: 50px;
-    line-height: 50px;
-    overflow: hidden;
-    z-index: 999;
-    display: none;
-    cursor: pointer;
-    border-radius: 35px;
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: rgba(0, 0, 0, 0.9);
-    color: #919ea6;
-    text-align: center;
-    font-size: 30px;
-    text-decoration: none;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  overflow: hidden;
+  z-index: 999;
+  display: none;
+  cursor: pointer;
+  border-radius: 35px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: var(--colorCorp);
+  color: #fff;
+  text-align: center;
+  font-size: 30px;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
 }
 #back2Top:hover {
-    background-color: rgba(0, 0, 0, 0.4);
-    color: #919ea6;
+  background-color: var(--colorCorp2);
+  color: #fff;
+}
+
+/*------------------------
+    About Section
+--------------------------*/
+.about-section {
+  margin-top: 100px;
+}
+
+.about-section h1 {
+  padding-bottom: 10px;
+}
+
+.about-section h2 {
+  color: var(--colorCorp2);
+  padding-bottom: 15px;
+}
+
+.about-section p {
+  text-align: justify;
+}
+
+.pic-frame {
+  position: relative;
+  padding-left: 25px;
+  padding-bottom: 25px;
+  display: inline-block;
+}
+
+.pic-frame:after {
+  position: absolute;
+  content: "";
+  width: calc(100% - 25px);
+  height: calc(100% - 25px);
+  bottom: 0;
+  left: 0;
+  border: 2px solid var(--colorCorp);
+  z-index: 1;
+}
+
+.milestone {
+  margin-top: 15px;
+}
+
+.milestone h2 {
+  font-size: 60px;
+}
+
+.milestone h2 span {
+  font-size: 18px;
+  color: var(--colorCorp3);
+}
+
+.sign {
+  width: 40%;
+  float: right;
 }
 
 /*------------------------
     Portfolio Section
 --------------------------*/
 .portfolio-section {
+  margin-top: 100px;
   overflow: hidden;
 }
 
@@ -433,25 +501,24 @@ ol {
 }
 
 .portfolio-tags {
-    height: 50px;
-    margin-top: 50px;
-    margin-top: 25px;
+  height: 50px;
 }
 
 .portfolio-filter li {
   font-size: 16px;
   display: inline-block;
   margin-right: 30px;
-  color: #919ea6;
+  color: var(--colorCorp3);
   cursor: pointer;
+  transition: all 0.3s ease-in-out;
 }
 
-.portfolio-filter li:hover{
-   color: #243d4f; 
+.portfolio-filter li:hover {
+  color: var(--colorCorp2);
 }
 
 .portfolio-filter li.mixitup-control-active {
-  color: #001418;
+  color: var(--colorCorp);
 }
 
 .portfolios-area .gallery-block {
@@ -498,7 +565,7 @@ ol {
 }
 
 .portfolio-item:hover .pi-inner {
-  background: rgba(0, 20, 24, 0.4);
+  background: rgba(12, 22, 32, 0.5);
 }
 
 .portfolio-item:hover .pi-inner h2 {
@@ -516,7 +583,7 @@ ol {
 
 .portfolio-meta p {
   font-size: 14px;
-  color: #a6a6a6;
+  color: var(--colorCorp3);
   margin-bottom: 0;
 }
 
@@ -542,6 +609,39 @@ ol {
 }
 
 /*------------------------
+    Skills Section
+--------------------------*/
+.skills-section {
+  margin-top: 100px;
+}
+
+.skills h2 {
+  font-size: 30px;
+}
+
+.skills h4 {
+  color: var(--colorCorp2);
+  padding-top: 10px;
+}
+
+.skills li {
+  list-style: none;
+  margin-top: 10px;
+}
+
+.otherSkill {
+  float: left;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  padding: 5px 10px;
+  margin: 10px 10px 0 0;
+}
+
+.skills .col-lg-4 {
+  padding: 0px 0px 25px 25px;
+}
+
+/*------------------------
     Footer Section
 --------------------------*/
 .footer-section {
@@ -550,7 +650,16 @@ ol {
 
 .footer-section .copyright {
   font-size: 12px;
-  color: #919ea6;
+  color: var(--colorCorp3);
+}
+
+.copyright a {
+  color: var(--colorCorp3);
+  transition: all 0.3s ease-in-out;
+}
+
+.copyright a:hover {
+  color: var(--colorCorp2);
 }
 
 .social-links {
@@ -559,13 +668,14 @@ ol {
 }
 
 .social-links a {
-  color: #919ea6;
+  color: var(--colorCorp3);
   font-size: 15px;
   margin-right: 30px;
+  transition: all 0.3s ease-in-out;
 }
 
 .social-links a:hover {
-    color:#212529;
+  color: var(--colorCorp2);
 }
 
 .social-links a:last-child {
@@ -575,54 +685,74 @@ ol {
 /*------------------------
     Contact Page
 --------------------------*/
-.contact{
-    margin-top: 50px;
+.contact-section {
+  margin-top: 100px;
 }
 
-.contact h2{
-    margin-top: 10px;
-    margin-bottom: 10px;
+.contact {
+  margin-bottom: 120px;
 }
 
-.contact h4{
-    margin-top: 10px;
-    margin-bottom: 10px;
+.contact h2 {
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
-.contact h6{
-    margin-top: 10px;
-    margin-bottom: 10px;
-    color: #223d4e;
+.contact h4 {
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
-.contact p{
-    color: #919ea6;
+.contact a {
+  color: var(--colorCorp2);
+  font-size: 1.5rem;
 }
 
-.contact span{
-    color: #919ea6;
-    font-size: 16px;
+.contact p {
+  color: var(--colorCorp3);
+}
+
+.contact span {
+  color: var(--colorCorp3);
+  font-size: 1rem;
 }
 
 .newStep {
-    margin-top: 40px;
+  margin-top: 40px;
 }
 
 /*------------------------
-    CV Page
+    CV Section
 --------------------------*/
 .cvContainer {
-    margin: 0;
-    padding: 0px 20px 0px 20px;
+  margin: 0;
+  padding: 0px 20px 0px 20px;
 }
 
-.cvContainer h1{
-    margin-top: 30px;
-    margin-bottom: 30px;
+.cvContainer h1 {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+#download-cv {
+  color: var(--colorCorp3);
+  transition: all 0.3s ease-in-out;
+}
+
+#download-cv:hover {
+  color: var(--colorCorp2);
+}
+
+.cv a {
+  margin: 30px 0px;
+}
+
+iframe {
+  background: var(--colorCorp2);
 }
 
 /* ===========================
-  Responsive
+  Media queries aka "hacer la página responsive"
 ==============================*/
 @media only screen and (max-width: 1448px) {
   .home-2.container {
@@ -687,8 +817,16 @@ ol {
     top: 35px;
     display: block;
   }
+  .header-btn {
+    display: none;
+  }
   .section-title {
     font-size: 45px;
+  }
+  .sign {
+    float: none;
+    margin: 0 auto;
+    margin-bottom: 16px;
   }
   .portfolio-filter {
     text-align: center;
