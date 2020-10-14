@@ -751,6 +751,17 @@ iframe {
   background: var(--colorCorp2);
 }
 
+.cv-btn {
+  display: none;
+}
+
+.cv-btn a {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 10px;
+}
+
 /* ===========================
   Media queries aka "hacer la página responsive"
 ==============================*/
@@ -774,6 +785,9 @@ iframe {
   }
   .portfolio-item {
     height: 350px;
+  }
+  .cv-btn {
+    display: block;
   }
 }
 
@@ -828,8 +842,8 @@ iframe {
     margin: 0 auto;
     margin-bottom: 16px;
   }
-  .portfolio-filter {
-    text-align: center;
+  .cv-btn {
+    display: block;
   }
 }
 
@@ -837,5 +851,8 @@ iframe {
 @media only screen and (max-width: 479px) {
   .section-title {
     font-size: 30px;
+  }
+  .cv-btn {
+    display: block;
   }
 }
