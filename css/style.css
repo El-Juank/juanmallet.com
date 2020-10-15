@@ -361,8 +361,9 @@ ol {
 }
 
 .site-logo {
-  font-size: 24px;
-  padding-top: 20px;
+  /*font-size: 24px;
+  padding-top: 20px;*/
+  width: 75px;
 }
 
 .main-menu ul {
@@ -385,6 +386,12 @@ ol {
 
 .main-menu ul li a:hover {
   color: var(--colorCorp2);
+  text-decoration: underline;
+}
+
+.nav-item-active {
+  color: var(--colorCorp2) !important;
+  text-decoration: underline;
 }
 
 .header-btn {
@@ -394,6 +401,10 @@ ol {
 
 .nav-switch {
   display: none;
+}
+
+.nav-item-mobile {
+  display: none !important;
 }
 
 /*------------------------
@@ -845,6 +856,9 @@ iframe {
   .cv-btn {
     display: block;
   }
+  .nav-item-mobile {
+    display: block !important;
+  }
 }
 
 /* small Mobile :320px. */
@@ -854,5 +868,8 @@ iframe {
   }
   .cv-btn {
     display: block;
+  }
+  .nav-item-mobile {
+    display: block !important;
   }
 }

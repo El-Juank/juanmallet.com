@@ -14,6 +14,10 @@
       content="portfolio, creative, html, css, javascript, Developer, Designer, Graphic, Artist, Audiovisual, Multimedia, Full stack"
     />
     <title>Juan Mallet - Desenvolupador Full Stack</title>
+    <meta
+      property="og:image"
+      content="https://www.juanmallet.com/img/juanmallet-social-preview.png"
+    />
 
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="img/icon.png" sizes="16x16" />
@@ -53,7 +57,11 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body>
+  <body
+    oncontextmenu="return false"
+    onselectstart="return false"
+    ondragstart="return false"
+  >
     <!-- Page Preloder -->
     <div id="preloder">
       <div class="loader"></div>
@@ -71,8 +79,8 @@
           <div class="col-lg-4 col-md-3">
             <div class="logo">
               <a href="index.html" title="Ves a la pàgina principal"
-                ><h2 class="site-logo">Juan Mallet</h2></a
-              >
+                ><img class="site-logo" src="img/logo.svg"
+              /></a>
             </div>
           </div>
           <div class="col-lg-8 col-md-9">
@@ -90,13 +98,21 @@
                   >
                 </li>
                 <li>
-                  <a href="portfolio.html" title="Veure el meu portfoli"
+                  <a
+                    href="portfolio.html"
+                    title="Veure el meu portfoli"
+                    class="nav-item-active"
                     >Portfoli</a
                   >
                 </li>
                 <li>
                   <a href="skills.html" title="Veure les meves competències"
                     >Competències</a
+                  >
+                </li>
+                <li class="nav-item-mobile">
+                  <a href="contact.html" title="Veure les meves competències"
+                    >Posa't en contacte</a
                   >
                 </li>
               </ul>
