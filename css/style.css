@@ -619,7 +619,7 @@ ol {
   transform: scale(1);
 }
 
-#showMore{
+#showMore {
   margin-top: 50px;
 }
 
@@ -704,13 +704,18 @@ ol {
   margin-top: 100px;
 }
 
-.contact {
-  margin-bottom: 120px;
+.contact-intro {
+  margin-bottom: 85px;
+}
+
+.contact-intro p {
+  font-size: 1.2rem !important;
 }
 
 .contact h2 {
   margin-top: 10px;
   margin-bottom: 10px;
+  font-size: 2rem;
 }
 
 .contact h4 {
@@ -720,16 +725,29 @@ ol {
 
 .contact a {
   color: var(--colorCorp2);
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
 .contact p {
   color: var(--colorCorp3);
+  font-size: 1rem;
 }
 
 .contact span {
   color: var(--colorCorp3);
   font-size: 1rem;
+}
+
+.contact-section .card i,
+#contact .card h4 {
+  color: var(--colorCorp1);
+  transition: all 0.3s ease-in-out;
+}
+
+.contact-section .card:hover i,
+#contact .card:hover {
+  color: var(--colorCorp2);
+  transition: all 0.3s ease-in-out;
 }
 
 .newStep {
