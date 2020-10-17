@@ -619,6 +619,10 @@ ol {
   transform: scale(1);
 }
 
+#showMore{
+  margin-top: 50px;
+}
+
 /*------------------------
     Skills Section
 --------------------------*/
