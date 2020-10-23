@@ -85,7 +85,7 @@ ol {
 }
 
 /*------------------------
-  Elements comunes
+  Elementos comunes
 --------------------------*/
 .element {
   margin-bottom: 100px;
@@ -148,7 +148,7 @@ ol {
   }
 }
 
-/*=== Buttons ===*/
+/*=== Botones ===*/
 .site-btn {
   display: inline-block;
   font-size: 14px;
@@ -360,9 +360,11 @@ ol {
   position: relative;
 }
 
+.logo {
+  display: inline;
+}
+
 .site-logo {
-  /*font-size: 24px;
-  padding-top: 20px;*/
   width: 75px;
 }
 
@@ -405,6 +407,56 @@ ol {
 
 .nav-item-mobile {
   display: none !important;
+}
+
+/*===  Dropbox idiomas  ===*/
+
+.custom-sel a {
+  text-decoration: none;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 10px;
+  text-align: left;
+  color: var(--colorCorp);
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 24px;
+  display: block;
+}
+
+.custom-sel i {
+  color: var(--colorCorp3);
+}
+
+.hidden {
+  display: none !important;
+}
+
+.custom-sel a:hover {
+  text-decoration: none;
+  background-color: var(--colorCorp3);
+  color: #ffffff;
+}
+
+.custom-sel a.selected {
+  background-color: transparent;
+}
+
+.custom-sel a.selected:hover {
+  background-color: transparent;
+  color: var(--colorCorp);
+}
+
+.show-sel {
+  background-color: #efefef;
+  /*box-shadow: -5px 0px 65px 0px rgba(0, 0, 0, 0.18);*/
+}
+
+.custom-sel {
+  position: absolute;
+  display: inline-block;
+  margin-top: 10px;
+  margin-left: 10px;
 }
 
 /*------------------------
@@ -701,15 +753,7 @@ ol {
     Contact Page
 --------------------------*/
 .contact-section {
-  margin-top: 100px;
-}
-
-.contact-intro {
-  margin-bottom: 85px;
-}
-
-.contact-intro p {
-  font-size: 1.2rem !important;
+  margin-top: 160px;
 }
 
 .contact h2 {
@@ -822,6 +866,13 @@ iframe {
   .cv-btn {
     display: block;
   }
+  .custom-sel {
+    margin-top: 10px;
+    padding: 5px 0px 5px 5px;
+  }
+  .custom-sel a {
+    display: inline;
+  }
 }
 
 /* Large Mobile :480px. */
@@ -881,6 +932,13 @@ iframe {
   .nav-item-mobile {
     display: block !important;
   }
+  .custom-sel {
+    margin-top: 10px;
+    padding: 5px 0px 5px 5px;
+  }
+  .custom-sel a {
+    display: inline;
+  }
 }
 
 /* small Mobile :320px. */
@@ -893,5 +951,12 @@ iframe {
   }
   .nav-item-mobile {
     display: block !important;
+  }
+  .custom-sel {
+    margin-top: 10px;
+    padding: 5px 0px 5px 5px;
+  }
+  .custom-sel a {
+    display: inline;
   }
 }

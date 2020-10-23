@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ca">
+<html lang="en">
   <head>
     <!-- Meta tags importantes -->
 
@@ -12,14 +12,14 @@
 
     <meta name="author" content="El Juank" />
 
-    <meta name="description" content="Pàgina web personal de Juan Mallet" />
+    <meta name="description" content="Personal website of Juan Mallet" />
 
     <meta
       name="keywords"
       content="portfolio, creative, html, css, javascript, Developer, Designer, Graphic, Artist, Audiovisual, Multimedia, Full stack"
     />
 
-    <title>Juan Mallet - Desenvolupador Full Stack</title>
+    <title>Juan Mallet - Full Stack Developer</title>
 
     <meta
       property="og:image"
@@ -75,7 +75,11 @@
     <![endif]-->
   </head>
 
-  <body>
+  <body
+    oncontextmenu="return false"
+    onselectstart="return false"
+    ondragstart="return false"
+  >
     <!-- Page Preloder -->
 
     <div id="preloder">
@@ -84,7 +88,7 @@
 
     <!-- Back2Top -->
 
-    <a id="back2Top" title="Cap amunt!" href="#"
+    <a id="back2Top" title="Go up!" href="#"
       ><span class="fa fa-chevron-up"></span
     ></a>
 
@@ -95,39 +99,44 @@
         <div class="row">
           <div class="col-lg-4 col-md-3">
             <div class="logo">
-              <a href="index" title="Ves a la pàgina principal"
+              <a href="index" title="Go to the main page"
                 ><img class="site-logo" src="img/logo.svg"
               /></a>
+            </div>
+            <div class="custom-sel">
+              <a class="selected" href="#" title="Change the language"
+                >EN &nbsp;<i class="fa fa-caret-down" aria-hidden="true"></i
+              ></a>
+              <a class="hidden" href="../ca/contact">CA</a>
+              <a class="hidden" href="../es/contact">ES</a>
             </div>
           </div>
 
           <div class="col-lg-8 col-md-9">
-            <a href="cv" class="site-btn header-btn" title="Veure el Currículum"
-              >Veu el Currículum</a
+            <a href="cv" class="site-btn header-btn" title="See the Curriculum"
+              >See the Curriculum</a
             >
 
             <nav class="main-menu">
               <ul>
                 <li>
-                  <a href="index" title="Ves a la pàgina sobre mi">Sobre mi</a>
+                  <a href="index" title="Go to the about me page">About me</a>
                 </li>
 
                 <li>
-                  <a href="portfolio" title="Veure el meu portfoli">Portfoli</a>
+                  <a href="portfolio" title="See my portfolio">Portfolio</a>
                 </li>
 
                 <li>
-                  <a href="skills" title="Veure les meves competències"
-                    >Competències</a
-                  >
+                  <a href="skills" title="See my skills">Skills</a>
                 </li>
 
                 <li class="nav-item-mobile">
                   <a
                     href="contact"
-                    title="Veure les meves competències"
+                    title="Get in touch"
                     class="nav-item-active"
-                    >Posa't en contacte</a
+                    >Get in touch</a
                   >
                 </li>
               </ul>
@@ -147,26 +156,16 @@
 
     <section class="contact-section">
       <div class="container contact">
-        <div class="contact-intro">
-          <h2 class="text-center mb-2">Posa't en contacte</h2>
-          <p class="text-center w-75 m-auto">
-            Utilitza qualsevol dels següents mètodes per posar-te en contacte
-            amb mi.<br />Espero amb moltes ganes el teu missatge.
-          </p>
-        </div>
         <div class="row">
           <div class="col-sm-12 col-md-6 col-lg-4">
             <div class="card border-0">
               <div class="card-body text-center">
                 <i class="fa fa-envelope-o fa-5x mb-4"></i>
-                <h4 class="mb-3">Correu electònic</h4>
-                <a
-                  href="mailto:juanmallet@gmail.com"
-                  title="Envia'm un missatge per correu electrònic"
-                >
+                <h4 class="mb-3">E-mail</h4>
+                <a href="mailto:juanmallet@gmail.com" title="Email me">
                   juanmallet@gmail.com
                 </a>
-                <p>Mètode preferit</p>
+                <p>Preferred method</p>
               </div>
             </div>
           </div>
@@ -178,8 +177,8 @@
                 <a
                   href="https://www.linkedin.com/in/juan-mallet"
                   target="_blank"
-                  title="Envia'm un missatge per LinkedIn"
-                  >Envia'm un missatge</a
+                  title="Send me a message on LinkedIn"
+                  >Send me a message</a
                 >
               </div>
             </div>
@@ -188,10 +187,10 @@
             <div class="card border-0">
               <div class="card-body text-center">
                 <i class="fa fa-phone fa-5x mb-4" aria-hidden="true"></i>
-                <h4 class="mb-3">Telèfon mòbil</h4>
+                <h4 class="mb-3">Mobile Phone</h4>
                 <a
                   href="tel:+34645209235"
-                  title="Truca'm o envia'm un WhatsApp"
+                  title="Call me or send me a WhatsApp"
                 >
                   +34 645 209 235
                 </a>
@@ -212,28 +211,28 @@
           <a
             href="http://behance.net/juan_mallet"
             target="_blank"
-            title="Ves al meu Behance"
+            title="Go to my Behance"
             ><span class="fa fa-behance"></span
           ></a>
 
           <a
             href="https://www.instagram.com/el__juank/"
             target="_blank"
-            title="Ves al meu Instagram"
+            title="Go to my Instagram"
             ><span class="fa fa-instagram"></span
           ></a>
 
           <a
             href="https://www.linkedin.com/in/juan-mallet"
             target="_blank"
-            title="Ves al meu LinkedIn"
+            title="Go to my LinkedIn"
             ><span class="fa fa-linkedin"></span
           ></a>
 
           <a
             href="https://github.com/El-Juank"
             target="_blank"
-            title="Ves al meu GitHub"
+            title="Go to my GitHub"
             ><span class="fa fa-github"></span
           ></a>
         </div>
