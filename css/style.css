@@ -449,7 +449,6 @@ ol {
 
 .show-sel {
   background-color: #efefef;
-  /*box-shadow: -5px 0px 65px 0px rgba(0, 0, 0, 0.18);*/
 }
 
 .custom-sel {
@@ -839,23 +838,23 @@ iframe {
   width: 10px;
 }
 
-/* ===========================
-  Media queries aka "hacer la página responsive"
-==============================*/
+/*------------------------
+    Media queries
+--------------------------*/
 @media only screen and (max-width: 1448px) {
   .home-2.container {
     width: auto;
   }
 }
 
-/* Medium screen : 992px. */
+/* Medium screen - 992px */
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .portfolio-item {
     height: 450px;
   }
 }
 
-/* Tablet :768px. */
+/* Tablet - 768px */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .body-pad {
     padding: 0 30px;
@@ -875,7 +874,7 @@ iframe {
   }
 }
 
-/* Large Mobile :480px. */
+/* Large Mobile - 480px */
 @media only screen and (max-width: 767px) {
   .body-pad {
     padding: 0 15px;
@@ -941,7 +940,7 @@ iframe {
   }
 }
 
-/* small Mobile :320px. */
+/* small Mobile - 320px */
 @media only screen and (max-width: 479px) {
   .section-title {
     font-size: 30px;
