@@ -67,6 +67,70 @@ $(window).on("load", function () {
     });
   });
 
+  /*------------------
+
+		Cookie-Alert
+
+	--------------------*/
+
+  (function () {
+    "use strict";
+
+    var cookieAlert = document.querySelector(".cookiealert");
+    var acceptCookies = document.querySelector(".acceptcookies");
+
+    if (!cookieAlert) {
+      return;
+    }
+
+    cookieAlert.offsetHeight; // Forzar el navegador para activar el reflujo (https://stackoverflow.com/a/39451131)
+
+    // Mostrar la alerta si no se encuentra la cookie "acceptCookies"
+    if (!getCookie("acceptCookies")) {
+      cookieAlert.classList.add("show");
+    }
+
+    // Al hacer clic en el "agree button" se crea una cookie de 1 año
+    // para recordar la elección del usuario y cerrar el banner
+    acceptCookies.addEventListener("click", function () {
+      setCookie("acceptCookies", true, 365);
+      cookieAlert.classList.remove("show");
+      $("#back2Top").css("bottom", "20px");
+
+      // dispatch the accept event
+      window.dispatchEvent(new Event("cookieAlertAccept"));
+    });
+
+    // Funciones de cookies de w3schools
+    function setCookie(cname, cvalue, exdays) {
+      var d = new Date();
+      d.setTime(d.getTime() + exdays * 24 * 60 * 60 * 1000);
+      var expires = "expires=" + d.toUTCString();
+      document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+    }
+
+    function getCookie(cname) {
+      var name = cname + "=";
+      var decodedCookie = decodeURIComponent(document.cookie);
+      var ca = decodedCookie.split(";");
+      for (var i = 0; i < ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0) === " ") {
+          c = c.substring(1);
+        }
+        if (c.indexOf(name) === 0) {
+          return c.substring(name.length, c.length);
+        }
+      }
+      return "";
+    }
+
+    // Subir el Back2Top para que no se solape con el banner
+    if ($(".cookiealert").hasClass("show")) {
+      $("#back2Top").css("bottom", "80px");
+    }
+  })();
+
   /*--------------------
 
 		Dropbox idiomas

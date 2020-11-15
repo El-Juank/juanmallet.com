@@ -169,6 +169,17 @@ ol {
   background-color: var(--colorCorp3);
 }
 
+.site-btn.btn-white {
+  background: #fff;
+  color: var(--colorCorp);
+  min-width: 70px;
+  padding: 5px;
+}
+
+.site-btn.btn-white:hover {
+  background: var(--colorCorp3);
+}
+
 .site-btn.btn-line {
   background: none;
   border: 2px solid var(--colorCorp);
@@ -487,9 +498,59 @@ ol {
   text-decoration: none;
   transition: all 0.3s ease-in-out;
 }
+
 #back2Top:hover {
   background-color: var(--colorCorp2);
   color: #fff;
+}
+
+/*------------------------
+    Cookie-Alert
+--------------------------*/
+.cookiealert {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  margin: 0 !important;
+  opacity: 0;
+  visibility: hidden;
+  border-radius: 0;
+  transform: translateY(100%);
+  transition: all 500ms ease-out;
+  color: #ecf0f1;
+  background: #212327 url("../img/cookie-alert_background.png");
+  z-index: 998; /* z-index 998 porque en 999 está el "Back2Top" */
+}
+
+.cookiealert.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0%);
+  transition-delay: 1000ms;
+}
+
+.cookiealert a {
+  color: #fff;
+  text-decoration: underline;
+  transition: all 0.3s ease-in-out;
+}
+
+.cookiealert a:hover {
+  color: var(--colorCorp3);
+}
+
+.cookiealert .acceptcookies {
+  margin-left: 10px;
+  vertical-align: baseline;
+}
+
+/*------------------------
+    Cookies Section
+--------------------------*/
+.cookies-section {
+  margin-top: 100px;
+  text-align: justify;
 }
 
 /*------------------------
