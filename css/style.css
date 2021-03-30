@@ -940,7 +940,7 @@ iframe {
   font-size: 252px;
   font-weight: 900;
   margin: 0px;
-  color: #262626;
+  color: var(--colorCorp);
   text-transform: uppercase;
   letter-spacing: -40px;
   margin-left: -20px;
@@ -951,48 +951,23 @@ iframe {
 }
 
 .notfound .notfound-404 h3 {
-  font-family: "Cabin", sans-serif;
   position: relative;
   font-size: 16px;
   font-weight: 700;
   text-transform: uppercase;
-  color: #262626;
+  color: var(--colorCorp);
   margin: 0px;
   letter-spacing: 3px;
   padding-left: 6px;
 }
 
 .notfound h2 {
-  font-family: "Cabin", sans-serif;
   font-size: 20px;
   font-weight: 400;
   text-transform: uppercase;
-  color: #000;
+  color: var(--colorCorp);
   margin-top: 0px;
   margin-bottom: 25px;
-}
-
-@media only screen and (max-width: 767px) {
-  .notfound .notfound-404 {
-    height: 200px;
-  }
-  .notfound .notfound-404 h1 {
-    font-size: 200px;
-  }
-}
-
-@media only screen and (max-width: 480px) {
-  .notfound .notfound-404 {
-    height: 162px;
-  }
-  .notfound .notfound-404 h1 {
-    font-size: 162px;
-    height: 150px;
-    line-height: 162px;
-  }
-  .notfound h2 {
-    font-size: 16px;
-  }
 }
 
 /*------------------------
@@ -1095,10 +1070,16 @@ iframe {
   .custom-sel a {
     display: inline;
   }
+  .notfound .notfound-404 {
+    height: 200px;
+  }
+  .notfound .notfound-404 h1 {
+    font-size: 200px;
+  }
 }
 
 /* small Mobile - 320px */
-@media only screen and (max-width: 479px) {
+@media only screen and (max-width: 480px) {
   .section-title {
     font-size: 30px;
   }
@@ -1114,5 +1095,16 @@ iframe {
   }
   .custom-sel a {
     display: inline;
+  }
+  .notfound .notfound-404 {
+    height: 162px;
+  }
+  .notfound .notfound-404 h1 {
+    font-size: 162px;
+    height: 150px;
+    line-height: 162px;
+  }
+  .notfound h2 {
+    font-size: 16px;
   }
 }
